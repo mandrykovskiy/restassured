@@ -1,4 +1,4 @@
-package practice.restassured.models;
+package practice.restassured.models.posts;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,9 +10,13 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class TagsItem {
+public class PostsResponse {
+    @JsonProperty("userId")
+    private Integer userId;
     @JsonProperty("id")
     private Integer id;
-    @JsonProperty("name")
-    private String name;
+    @JsonProperty("title")
+    private String title;
+    @JsonProperty("body")
+    private String body;
 }

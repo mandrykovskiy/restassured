@@ -1,4 +1,4 @@
-package practice.restassured.models;
+package practice.restassured.models.comments;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,9 +10,15 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Category {
+public class CommentsResponse {
+    @JsonProperty("postId")
+    private Integer postId;
     @JsonProperty("id")
     private Integer id;
     @JsonProperty("name")
     private String name;
+    @JsonProperty("email")
+    private String email;
+    @JsonProperty("body")
+    private String body;
 }
