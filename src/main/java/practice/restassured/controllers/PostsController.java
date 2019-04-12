@@ -5,7 +5,7 @@ import practice.restassured.models.posts.PostsResponse;
 
 import static io.restassured.RestAssured.given;
 
-public class PostsConroller extends Client {
+public class PostsController extends Client {
 
     public PostsResponse[] postsGet() {
         return given().spec(requestSpecification)
