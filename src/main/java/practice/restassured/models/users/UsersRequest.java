@@ -10,8 +10,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class UsersRequest {@JsonProperty("id")
-private Integer id;
+public class UsersRequest {
+    @JsonProperty("id")
+    private Integer id;
     @JsonProperty("name")
     private String name;
     @JsonProperty("username")

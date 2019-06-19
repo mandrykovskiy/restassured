@@ -36,14 +36,14 @@ public class PostsTest {
 
 //    @Test
 //    public void postsPostTest() {
-//        UsersRequest request = UsersRequest.builder()
+//        TodosRequest request = TodosRequest.builder()
 //                .id(RandomUtils.nextInt(0, 9000))
 //                .body("PostBody")
 //                .title("PostTilte")
 //                .userId(RandomUtils.nextInt(0, 100))
 //                .build();
-//        UsersResponse response = new PostsController().postsPost(request);
-//        UsersResponse[] response2 = new PostsController().postsGet();
+//        TodosResponse response = new PostsController().postsPost(request);
+//        TodosResponse[] response2 = new PostsController().postsGet();
 //
 //        Assert.assertTrue(Arrays.asList(response2).contains(response));
 //    }
@@ -53,17 +53,17 @@ public class PostsTest {
 //        int postId = RandomUtils.nextInt(0, 9000);
 //        String postBody = RandomStringUtils.randomAlphabetic(5);
 //        String newPostBody = RandomStringUtils.randomAlphabetic(5);
-//        UsersRequest createPostRequest = UsersRequest.builder()
+//        TodosRequest createPostRequest = TodosRequest.builder()
 //                .id(postId)
 //                .body(postBody)
 //                .title("PostTitle")
 //                .userId(RandomUtils.nextInt(0, 100))
 //                .build();
-//        UsersResponse response = new PostsController().postsPost(createPostRequest);
-//        UsersRequest putRequest = UsersRequest.builder()
+//        TodosResponse response = new PostsController().postsPost(createPostRequest);
+//        TodosRequest putRequest = TodosRequest.builder()
 //                .body(newPostBody)
 //                .build();
-//        UsersResponse putResponse = new PostsController().postsPut(postId, putRequest);
+//        TodosResponse putResponse = new PostsController().postsPut(postId, putRequest);
 //
 //        Assert.assertEquals(newPostBody, putResponse.getBody());
 //    }
